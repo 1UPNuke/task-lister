@@ -6,7 +6,8 @@ const ListSchema = mongoose.Schema({
         required: true,
     },
     description: String,
-    taskIDs: [String]
+    color: String,
+    taskIds: [String]
 });
 
 module.exports = mongoose.model('lists', ListSchema);

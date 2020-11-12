@@ -9,4 +9,4 @@ const TaskSchema = mongoose.Schema({
     imgUrl: [String]
 });
 
-module.exports = mongoose.model('lists', ListSchema);
+module.exports = mongoose.model('tasks', TaskSchema);
