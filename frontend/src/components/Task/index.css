@@ -1,0 +1,17 @@
+.task {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #333;
+    border: 0px;
+    border-style: solid;
+    margin-bottom: 3%;
+}
+
+.task-title, .task-description {
+    width: 100%;
+    margin: 5px;
+}

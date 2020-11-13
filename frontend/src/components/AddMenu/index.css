@@ -1,0 +1,31 @@
+.add-bg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #00000088;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+}
+
+.add-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 90vmin;
+    height: 90vmin;
+    border-radius: 50px;
+    position: fixed;
+    background-color: #222;
+    top: 5vmin;
+}
+
+.add-button {
+    position: absolute;
+    right: 2vmin;
+    bottom: 8vmin;
+}

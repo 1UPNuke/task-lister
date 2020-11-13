@@ -1,6 +1,8 @@
 import './index.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import List from '../../components/List';
+import AddMenu from '../../components/AddMenu';
 
 const App = ()=>{
   const [lists, setLists] = useState([])
@@ -10,7 +12,8 @@ const App = ()=>{
   }, []);
   return (
     <div className="App">
-      {lists.map((list)=><p>{JSON.stringify(list)}</p>)}
+      {lists.map((list)=><List title={list.title} description={list.description} color={list.color} taskIds={list.taskIds}/>)}
+      <AddMenu/>
     </div>
   );
 }
