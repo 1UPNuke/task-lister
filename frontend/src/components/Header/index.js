@@ -2,8 +2,8 @@ import './index.css';
 
 const Header = ()=>{
   return (
-    <header name="header">
-      <a href="/">task-lister</a>
+    <header>
+      <a href="/" name="header">task-lister</a>
     </header>
   );
 }

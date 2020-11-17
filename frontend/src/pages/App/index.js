@@ -13,7 +13,7 @@ const App = ()=>{
   return (
     <div className="App">
       {lists.map((list)=><List title={list.title} description={list.description} color={list.color} taskIds={list.taskIds}/>)}
-      <AddMenu/>
+      <AddMenu setLists={setLists}/>
     </div>
   );
 }

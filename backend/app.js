@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'build')))
 
@@ -18,17 +18,19 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
-app.get("/lists", listController.getLists);
-app.route('/lists/:listId')
+app.route("/lists")
+    .get(listController.getLists)
+    .post(listController.addList);
+app.route('api/lists/:listId')
     .get(listController.getList)
-    .post(listController.addList)
     .put(listController.editList)
     .delete(listController.deleteList);
 
-app.get("/tasks", taskController.getTasks);
+app.route("/tasks")
+    .get(taskController.getTasks)
+    .post(taskController.addTask);
 app.route('/tasks/:taskId')
     .get(taskController.getTask)
-    .post(taskController.addTask)
     .put(taskController.editTask)
     .delete(taskController.deleteTask);
 
