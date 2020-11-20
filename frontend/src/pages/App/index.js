@@ -12,7 +12,7 @@ const App = ()=>{
   }, []);
   return (
     <div className="App">
-      {lists.map((list)=><List title={list.title} description={list.description} color={list.color} taskIds={list.taskIds}/>)}
+      {lists.map((list)=><List setLists={setLists} _id={list._id} title={list.title} description={list.description} color={list.color} taskIds={list.taskIds}/>)}
       <AddMenu setLists={setLists}/>
     </div>
   );

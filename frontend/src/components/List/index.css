@@ -41,3 +41,13 @@
     -webkit-hyphens: auto;
     hyphens: auto;
 }
+
+input.list-title, input.list-description {
+    background-color: transparent;
+    border: 2px dotted #555;
+    box-shadow: none;
+}
+
+input.list-title {
+    font-size: 150%;
+}

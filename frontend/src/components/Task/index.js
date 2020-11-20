@@ -1,6 +1,7 @@
 import './index.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import EditButton from '../EditButton';
 
 const Task = ({id})=>{
   const [task, setTask] = useState({})
@@ -12,6 +13,7 @@ const Task = ({id})=>{
     <div className="task">
       <h3 className="task-title">{task.title}</h3>
       <p className="task-description">{task.description}</p>
+      <EditButton/>
     </div>
   );
 }

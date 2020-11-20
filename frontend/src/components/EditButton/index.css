@@ -1,0 +1,20 @@
+.edit-button {
+    background-color: transparent;
+    border: 0px;
+    color: #fff2;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    display: none;
+}
+
+.circle-button:active{
+    transform: scale(0.2);
+    transform-origin: 50% 50%;
+}
+
+*:hover > .edit-button{
+    display: inline-block;
+}

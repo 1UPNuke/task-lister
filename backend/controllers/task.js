@@ -23,9 +23,7 @@ exports.getTask = async (req, res) => {
 };
 
 exports.addTask = async (req, res) => {
-    console.log(req.body);
     const { title, description, imgUrl } = req.body;
-
     const task = new Task({ title: title, description: description, imgUrl: imgUrl });
     task.save(err => {
         if (err) {

@@ -2,7 +2,6 @@ import './index.css';
 import CircleButton from '../CircleButton';
 import {useState} from 'react';
 import axios from 'axios';
-import App from '../../pages/App';
 
 const AddMenu = ({setLists})=>{
   const [open, setOpen] = useState(false);
@@ -20,7 +19,6 @@ const AddMenu = ({setLists})=>{
                   description: form.description.value,
                   color: form.color.value,
                 }
-                console.log(data)
                 await axios.post('/lists', JSON.stringify(data), {
                   headers: {
                     'Content-Type': 'application/json'

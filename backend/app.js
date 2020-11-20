@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 app.route("/lists")
     .get(listController.getLists)
     .post(listController.addList);
-app.route('api/lists/:listId')
+app.route('/lists/:listId')
     .get(listController.getList)
     .put(listController.editList)
     .delete(listController.deleteList);

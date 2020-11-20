@@ -37,6 +37,9 @@ exports.addList = (req, res) => {
 };
 
 exports.editList = (req, res) => {
+    if(req.body.title==="") delete req.body.title;
+    if(req.body.description==="") delete req.body.description;
+    if(req.body.color==="") delete req.body.color;
     List.findByIdAndUpdate(
         req.params.listId,
         req.body,
