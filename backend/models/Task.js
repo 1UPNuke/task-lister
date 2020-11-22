@@ -6,7 +6,6 @@ const TaskSchema = mongoose.Schema({
         required: true,
     },
     description: String,
-    imgUrl: [String]
 });
 
 module.exports = mongoose.model('tasks', TaskSchema);

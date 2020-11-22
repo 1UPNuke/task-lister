@@ -19,11 +19,7 @@ const AddMenu = ({setLists})=>{
                   description: form.description.value,
                   color: form.color.value,
                 }
-                await axios.post('/lists', JSON.stringify(data), {
-                  headers: {
-                    'Content-Type': 'application/json'
-                  }
-                });
+                await axios.post('/lists', data);
                 setOpen(false);
                 setLists((await axios.get('/lists')).data);
               }

@@ -1,0 +1,25 @@
+.delete-button {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: none;
+}
+
+.delete-button:active {
+    transform: scale(0.9);
+}
+
+*:hover > .delete-button{
+    display: inline-block;
+}

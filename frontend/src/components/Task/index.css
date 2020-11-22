@@ -8,10 +8,21 @@
     background-color: #333;
     border: 0px;
     border-style: solid;
-    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-left: 5%;
+    position: relative;
 }
 
 .task-title, .task-description {
     width: 100%;
     margin: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+input.task-title, input.task-description {
+    background-color: transparent;
+    border: 2px dotted #555;
+    box-shadow: none;
+    width: 90%;
 }
