@@ -69,6 +69,10 @@ const List = ({_id, title, description, color, taskIds, setLists})=>{
           let del=window.confirm('Are you sure you want to delete list: "'+title+'"?')
           if(del)
           {
+            for(let id of taskIds)
+            {
+              await axios.delete('/tasks/'+id);
+            }
             await axios.delete('/lists/'+_id);
             setLists((await axios.get('/lists')).data);
           }

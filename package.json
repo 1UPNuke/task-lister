@@ -1,0 +1,23 @@
+{
+  "name": "task-lister",
+  "version": "1.0.0",
+  "description": "A small task list web app built in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && npm run start",
+    "dev": "cd backend && npm run dev",
+    "servers": "cd backend && npm run servers"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1UPNuke/task-lister.git"
+  },
+  "keywords": [],
+  "author": "1-UP Nuke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1UPNuke/task-lister/issues"
+  },
+  "homepage": "https://github.com/1UPNuke/task-lister#readme"
+}
